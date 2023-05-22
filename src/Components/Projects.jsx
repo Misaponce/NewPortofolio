@@ -1,6 +1,6 @@
 import React from 'react'
 import '../stylesheet/Projects.css'
-import { ProjectCard } from './ProjectCard'
+import ProjectCard from './ProjectCard'
 import { useTranslation  } from 'react-i18next'
 import Tech from '../assets/img/tech-1.png'
 import China from '../assets/img/China-1.png'
