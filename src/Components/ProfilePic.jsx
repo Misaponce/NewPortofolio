@@ -7,7 +7,7 @@ export const ProfilePic = () => {
   return (
     <div className='wrapper my-3'>
         <div className='profile'>
-            <img src={Profile}/>
+            <img src={Profile} alt='profile-picture'/>
         </div>
     </div>
   )
