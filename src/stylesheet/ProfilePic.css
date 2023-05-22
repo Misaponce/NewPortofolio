@@ -1,0 +1,31 @@
+.wrapper {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px -15px #495057;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.wrapper:hover {
+    box-shadow: 0 20px 30px -15px #495057;
+}
+
+.wrapper img {
+    position: relative;
+    width: 100%;
+    border-radius: 4px;
+    mix-blend-mode: normal;
+    filter: grayscale(100%) contrast(100%);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.wrapper:hover img {
+    filter: none;
+}
+
+
+
+
+
+

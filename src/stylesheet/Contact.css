@@ -1,0 +1,30 @@
+.contact {
+    background-image:url('../assets/img/contact-bg.svg');
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+}
+
+.contact .container {
+    width: 900px;
+    background-color: #dddddd50;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.4);
+
+}
+
+
+.contact ul li a {
+    color: #212529;
+    transition: all 0.25s ease-in-out;
+}
+
+.contact ul li a:hover {
+    color: #ffa500;
+}
+

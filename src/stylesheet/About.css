@@ -1,0 +1,29 @@
+
+/* waves color #495057 */
+
+.about {
+    background-image:url('../assets/img/layered-steps-haikei.svg');
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    background-position:center;
+    min-height: 100vh;
+}
+
+.about .container {
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-radius: 15px;
+}
+
+.skill-list {
+    list-style: none;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+}
+
+ul.skill-list li::before {
+    content: "▹";
+    color: #ffa500;
+    padding-right: 5px;
+}
