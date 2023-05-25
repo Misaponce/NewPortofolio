@@ -1,75 +1,41 @@
-.card-wrapper {
-    min-height: 450px;
+/* Modal & Card additional details */
+.modal {
+    backdrop-filter: blur(5px);
 }
 
-.project-img {
-    width: 700px;
-    height: 400px;
-    border: 1px solid #a5a5a5;
-    background-color: #6c757d;
-    mix-blend-mode: normal;
-    filter: grayscale(100%) contrast(100%);
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-position: center;
-    background-size: cover;
+.line {
+    height: 0.01rem;
+    background: black;
 }
 
-.project-img:hover {
-    z-index: 3;
-    filter: none;
-    border: 0;
-    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+.close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    --bs-btn-close-focus-shadow: none !important;
 }
 
-
-.project-info {
-    min-height: 50%;
-    color: #ddd;
-    background-color: #212529;
-    -webkit-box-shadow: 6px 6px 5px 0px rgb(96, 95, 95);
-    -moz-box-shadow: 6px 6px 5px 0px rgba(96, 95, 95);
-    box-shadow: 6px 6px 5px 0px rgba(96, 95, 95);
+.main-card {
+    cursor: pointer;
 }
 
-.project-info-reverse{
-    min-height: 50%;
-    color: #ddd;
-    background-color: #212529;
-    -webkit-box-shadow: -6px 6px 5px 0px rgba(96, 95, 95);
-    -moz-box-shadow: -6px 6px 5px 0px rgba(96, 95, 95);
-    box-shadow: -6px 6px 5px 0px rgba(96, 95, 95);
-}
-
-.project-description {
-    border-right: 1px solid #6c757d;
-    border-bottom: 1px solid #6c757d;
-    border-radius: 4px 0px 4px 0px;
-    padding: 5px;
-}
-.project-description-reverse {
-    border-left: 1px solid #6c757d;
-    border-bottom: 1px solid #6c757d;
-    border-radius: 4px 0px 0px 4px;
-    padding: 5px;
-}
-
-.card-wrapper h6 {
-    color: #ffa500 !important;
-}
-
-ul.tools-list li::before {
+/* Fix this styles later */
+.tools-list li::before {
     content: "▹";
     color: #ffa500;
     padding-right: 5px;
 }
 
-.project-link li a {
+.project-link {
     color: #ddd;
     transition: all 0.25s ease-in-out;
 }
 
-.project-link li a:hover {
+.card-link {
+    color: #212529;
+    transition: all 0.25s ease-in-out;
+}
+
+.card-link:hover {
     color: #ffa500;
 }

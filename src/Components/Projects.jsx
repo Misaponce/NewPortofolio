@@ -4,7 +4,6 @@ import ProjectCard from './ProjectCard'
 import { useTranslation  } from 'react-i18next'
 import Tech from '../assets/img/tech-1.png'
 import China from '../assets/img/China-1.png'
-import Portofolio from '../assets/img/portofolio.png'
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -19,40 +18,28 @@ export const Projects = () => {
                 </div>
             </div>
             
-            <div className="row projects-content d-block">
-              {/* Project 1 */}
-              <div className="col-lg-12 mb-4">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
+            {/* each cardd goes on a different col */}
+              {/* Card 1 */}
+              <div className="col">
                 <ProjectCard 
-                  skills={['React', 'Bootstrap 5', 'SASS']}
                   image={Tech}
-                  projectType={t('projectsTranslations.projectsList.pj1.pjType')}
+                  modalImage={Tech}
                   projectName={t('projectsTranslations.projectsList.pj1.pjName')}
+                  url={'link'}
                   projectDescription={t('projectsTranslations.projectsList.pj1.pjInfo')}
-                  url={'https://github.com/Jaro1407/React-Project/wiki/TechPlayground-%5BENG%5D'}
+                  projectTools={['React', 'Bootstrap 5', 'Kodigo API', ]}
                 />
               </div>
-              {/* Project 2 */}
-              <div className="col-lg-12 mb-4">
-                <ProjectCard
-                  skills={['JavaScript', 'Bootstrap 5', 'Sass', ]}
+              {/* Card 2 */}
+              <div className="col">
+                <ProjectCard 
                   image={China}
-                  projectType={t('projectsTranslations.projectsList.pj2.pjType')}
+                  modalImage={China}
                   projectName={t('projectsTranslations.projectsList.pj2.pjName')}
+                  url={'link'}
                   projectDescription={t('projectsTranslations.projectsList.pj2.pjInfo')}
-                  url={'https://github.com/Misaponce/China-Bites/wiki/China-&-Bites'}
-                  // This reverse prop is to change the position of the project image
-                  reverse={true}
-                />
-              </div>
-              {/* Project 3 */}
-              <div className="col-lg-12 mb-4">
-                <ProjectCard
-                  skills={['React', 'Bootstrap 5', 'Styled Components', 'i18n Framework']}
-                  image={Portofolio}
-                  projectType={t('projectsTranslations.projectsList.pj3.pjType')}
-                  projectName={t('projectsTranslations.projectsList.pj3.pjName')}
-                  projectDescription={t('projectsTranslations.projectsList.pj3.pjInfo')}
-                  url={'https://github.com/Misaponce/China-Bites/wiki/China-&-Bites'}
+                  projectTools={['JavaScript', 'Bootstrap 5', 'Sass', ]}
                 />
               </div>
             </div>

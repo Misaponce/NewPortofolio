@@ -1,48 +1,94 @@
 import React from 'react';
 import '../stylesheet/ProjectCard.css';
 
-const ProjectCard = ({ reverse, skills, image, projectType, projectName, projectDescription, url }) => {
-  // Use custome class to change position of image on projects
-  const imageClass = reverse
-    ? 'col-lg-8 col-12 project-img position-absolute z-2 top-50 end-0 translate-middle-y rounded-3'
-    : 'col-lg-8 col-12 project-img position-absolute z-1 top-50 start-0 translate-middle-y rounded-3';
-  const infoClass = reverse
-    ? 'col-lg-6 col-12 project-info-reverse position-absolute z-1 top-50 start-0 translate-middle-y rounded-3 pb-3'
-    : 'col-lg-6 col-12 project-info position-absolute z-2 top-50 end-0 translate-middle-y rounded-3';
+const ProjectCard = ({ projectTools, image, projectName, projectDescription, url, modalImage }) => {
+
+  // Generate a unique modal ID for each card to pop-up the right image
+  const modalId = `modal-${Math.random().toString(36).substring(2, 10)}`;
 
   return (
-    <div className='card-wrapper container position-relative d-block'>
-      <div className='row'>
-        <div className={imageClass} style={{ backgroundImage: `url(${image})` }}></div>
-        <div className={infoClass}>
-          <h6 className={`text-${reverse ? 'end text-lg-start' : 'start text-lg-end'} py-3`}>{projectType}</h6>
-          <h2 className={`text-${reverse ? 'end text-lg-start' : 'start text-lg-end'} text-decoration-none`}>
-            <strong>{projectName}</strong>
-          </h2>
-          <div className={`project-description ${reverse ? 'project-description-reverse' : ''}`}>
-            <p className={`text-${reverse ? 'end text-lg-start' : 'start text-lg-end'} m-0 fs-6`}>
-              {projectDescription}
-            </p>
-          </div>
-          <ul
-            className={`d-flex justify-content-${reverse ? 'end justify-content-lg-start' : 'start justify-content-lg-end'} list-unstyled gap-3 tools-list py-1`}
-          >
-            {skills.map((skill, index) => (
-              <li key={index}>{skill}</li>
-            ))}
-          </ul>
-          <ul
-            className={`d-flex justify-content-${reverse ? 'end justify-content-lg-start' : 'start justify-content-lg-end'} list-unstyled gap-3 fs-4 project-link`}
-          >
-            <li className='px-1'>
-              <a href={url} target='_blank' rel='noopener noreferrer'>
-                <i className='bi bi-github'></i>
-              </a>
-            </li>
-          </ul>
+    <>
+    {/* Card Body */}
+        <div className="card h-100">
+            <img 
+                src={image} 
+                className="card-img-top main-card"
+                alt='China-Projects'
+                data-bs-toggle="modal"
+                data-bs-target={`#${modalId}`}
+            />
+            <div className="card-body">
+                {/* Project tittle */}
+                <div className="project-tittle d-flex align-items-center">
+                    <h5 className="card-title"><strong>{projectName}</strong></h5>
+                    <div className="line col mx-2"></div>
+                    <a 
+                        href={url} 
+                        className="card-link fs-4"
+                        target='_blank' 
+                        rel='noopener noreferrer'
+                    >
+                            <i className='bi bi-github bi-lg'></i>
+                    </a>
+                </div>
+                {/* Project Tech */}
+                <h6 className="card-subtitle mb-2 text-body-secondary">
+                    <ul className='list-group list-group-horizontal list-unstyled tools-list'>
+                        {projectTools.map((projectTool, index) => (
+                            <li className='pe-2' key={index}>{projectTool}</li>
+                        ))}
+                    </ul>
+                </h6>
+                {/* Project Description */}
+                <p className="card-text">{projectDescription}</p>
+            </div>
         </div>
-      </div>
-    </div>
+
+    {/* Modal */}
+        <div className="modal fade" id={modalId} data-bs-keyboard="false" tabIndex="-1" aria-hidden="true">
+            <button type="button" className="btn-close btn-close-white close-button m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div className="modal-dialog modal-lg">
+                <div className="modal-content">
+                <div className="modal-body">
+                    <div className="card h-100">
+                        <img 
+                            src={modalImage} 
+                            className="card-img-top" 
+                            alt='China-Projects'
+                        />
+                        <div className="card-body">
+                            {/* Project tittle */}
+                            <div className="project-tittle d-flex align-items-center">
+                                <h5 className="card-title"><strong>{projectName}</strong></h5>
+                            </div>
+                            {/* Project Tech */}
+                            <h6 className="card-subtitle mb-2 text-body-secondary">
+                                <ul className='list-group list-group-horizontal list-unstyled tools-list'>
+                                {projectTools.map((projectTool, index) => (
+                                    <li className='pe-2' key={index}>{projectTool}</li>
+                                ))}
+                                </ul>
+                            </h6>
+                            {/* Project Description */}
+                            <p className="card-text">{projectDescription}</p>
+                        </div>
+                        <div className="card-footer">
+                            <h5>Project links</h5>
+                            <a 
+                                href={url} 
+                                className="card-link fs-4"
+                                target='_blank' 
+                                rel='noopener noreferrer'
+                            >
+                                <i className='bi bi-github bi-2x'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </>
   );
 };
 

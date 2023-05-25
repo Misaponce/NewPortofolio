@@ -52,19 +52,12 @@ i18next
                         projectsHeader: "Projects",
                         projectsList: {
                             pj1: {
-                                pjType: "Cooperative Project",
                                 pjName: "TechPlayground",
                                 pjInfo: "This project was developed with the porpouse of put in practice concept and knowledge adquire in the Web Developer Bootcamp by Kodigo (https://kodigo.org/) in which we were able to learn, work and level up our skills in HTML, CSS & JavaScript along with libraries such as ReacJS and CSS frameworks like Bootstrap."
                             },
                             pj2: {
-                                pjType: "Freelance Project",
                                 pjName: "China & Bites",
                                 pjInfo: "China & Bites is a chinese food restaurant located in El Salvador who's owner contact me to develope a concept landing page that covers some of the most important details of his bussiness."
-                            },
-                            pj3: {
-                                pjType: "Personal Project",
-                                pjName: "Portofolio",
-                                pjInfo: "I design this portofolio with the pourpose of show some of the technologies I have experience with and a littlle description about my self and educational experience. The language change option allowed me to implement the use of internationalization framework and thus make the project more iteractive."
                             },
                         }
                     },
@@ -112,19 +105,12 @@ i18next
                         projectsHeader: "Proyectos",
                         projectsList: {
                             pj1: {
-                                pjType: "Proyecto Cooperativo",
                                 pjName: "TechPlayground",
                                 pjInfo: "Este proyecto fue desarrollado con el propósito de poner en práctica los conocimientos adquiridos en el Web Developer Bootcamp by Kodigo (https://kodigo.org/) en el cual pudimos aprender, desarrollar y nivelar nuestras habilidades en HTML, CSS & JavaScript junto con bibliotecas como ReacJS y frameworks CSS como Bootstrap."
                             },
                             pj2: {
-                                pjType: "Proyecto Freelance",
                                 pjName: "China & Bites",
                                 pjInfo: "China & Bites es un restaurante de comida china ubicado en El Salvador cuyo dueño me contactó para desarrollar una landing page conceptual que cubra algunos de los detalles más importantes de su negocio."
-                            },
-                            pj3: {
-                                pjType: "Proyecto Personal",
-                                pjName: "Portofolio",
-                                pjInfo: "Diseñé este portafolio con el propósito de mostrar algunas de las tecnologías con las que tengo experiencia y una pequeña descripción sobre mi experiencia educativa y personal. La opcion del cambio de idioma me permitio poner en practica el uso de nuevas librerias y asi agregar interactividad al proyecto."
                             },
                         }
                     },
