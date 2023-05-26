@@ -29,6 +29,7 @@ export const Projects = () => {
                   url={'link'}
                   projectDescription={t('projectsTranslations.projectsList.pj1.pjInfo')}
                   projectTools={['React', 'Bootstrap 5', 'Kodigo API', ]}
+                  alt={'TechPlayground'}
                 />
               </div>
               {/* Card 2 */}
@@ -40,6 +41,7 @@ export const Projects = () => {
                   url={'link'}
                   projectDescription={t('projectsTranslations.projectsList.pj2.pjInfo')}
                   projectTools={['JavaScript', 'Bootstrap 5', 'Sass', ]}
+                  alt={'China-Bites'}
                 />
               </div>
             </div>

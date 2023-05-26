@@ -1,7 +1,7 @@
 import React from 'react';
 import '../stylesheet/ProjectCard.css';
 
-const ProjectCard = ({ projectTools, image, projectName, projectDescription, url, modalImage }) => {
+const ProjectCard = ({ projectTools, image, projectName, projectDescription, url, modalImage, alt }) => {
 
   // Generate a unique modal ID for each card to pop-up the right image
   const modalId = `modal-${Math.random().toString(36).substring(2, 10)}`;
@@ -13,7 +13,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
             <img 
                 src={image} 
                 className="card-img-top main-card"
-                alt='China-Projects'
+                alt={alt}
                 data-bs-toggle="modal"
                 data-bs-target={`#${modalId}`}
             />
@@ -54,7 +54,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
                         <img 
                             src={modalImage} 
                             className="card-img-top" 
-                            alt='China-Projects'
+                            alt={alt}
                         />
                         <div className="card-body">
                             {/* Project tittle */}
