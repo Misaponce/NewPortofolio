@@ -36,12 +36,14 @@ export const About = () => {
                         </DivAnimation>
                     </div>
                     <div className='row '>
-                        <ul className="skill-list d-grid justify-content-center justify-content-lg-start">
-                            <li className="skill-item">JavaScript</li>
-                            <li className="skill-item">Bootstrap 5</li>
-                            <li className="skill-item">Sass</li>
-                            <li className="skill-item">React</li>
-                        </ul>
+                        <DivAnimation>
+                            <ul className="skill-list d-grid justify-content-center justify-content-lg-start">
+                                <li className="skill-item">JavaScript</li>
+                                <li className="skill-item">Bootstrap 5</li>
+                                <li className="skill-item">Sass</li>
+                                <li className="skill-item">React</li>
+                            </ul>
+                        </DivAnimation>
                     </div>
                 </div>
                 <div className='col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center align-items-center'>

@@ -1,3 +1,18 @@
+.logo-letter {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    user-select: none;
+    font-family: Chakra Petch, sans-serif;
+}
+
+.logo-dot {
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 1;
+    user-select: none;
+    color: #ffa500;
+}
 
 /* toggle buttom default style remove */
 .navbar-toggler {

@@ -2,6 +2,7 @@ import React from 'react'
 import '../stylesheet/Contact.css'
 import { useTranslation } from 'react-i18next'
 import { DivAnimation } from './Animations/DivAnimation';
+import { ListAnimation } from './Animations/ListAnimation';
 
 export const Contact = ({ icons }) => {
     const { t } = useTranslation();
@@ -26,19 +27,24 @@ export const Contact = ({ icons }) => {
                 </div>
             </DivAnimation>
             <div className="row socials-row">
-                <div className="col-lg-12">
-                    <ul className=' d-flex justify-content-center list-unstyled gap-5 fs-3 p-2'>
-                        {/* using map un UL to render each icon  */}
-                        {icons.map((icon, index) => (
-                            <li key={index} className='p-1'>
-                                {/* pass an <a> tag with icon.url have a different link on each icon */}
-                                <a href={icon.url} target='_blank' rel='noopener noreferrer'>
-                                    <i className={`bi bi-${icon.name}`}></i>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <ListAnimation 
+                    bsClass={"col-lg-12"}
+                    ulClass={' d-flex justify-content-center list-unstyled gap-5 fs-3 p-2'}
+                    liClass={'p-1'}
+                >
+                    <a href='https://github.com/Misaponce' target='_blank' rel='noopener noreferrer'>
+                        <i className='bi bi-github'></i>
+                    </a>
+                    <a href='https://twitter.com/Misa_Ponce' target='_blank' rel='noopener noreferrer'>
+                        <i className='bi bi-twitter'></i>
+                    </a>
+                    <a href='https://www.linkedin.com/in/misael-ponce-976aa6240/' target='_blank' rel='noopener noreferrer'>
+                        <i className='bi bi-linkedin'></i>
+                    </a>
+                    <a href='mailto:poncemisael@gmail.com' target='_blank' rel='noopener noreferrer'>
+                        <i className='bi bi-envelope-at-fill'></i>
+                    </a>
+                </ListAnimation>
             </div>
         </div>
     </div>

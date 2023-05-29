@@ -1,6 +1,7 @@
 import React from 'react';
 import '../stylesheet/Home.css';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 import Resume from '../assets/Misael_Ponce_Resume.pdf'
 
 export const Home = () => {
@@ -18,13 +19,14 @@ export const Home = () => {
                     <div className="col-lg-12 col-md-12 p-1 text-center">
                         {/* Resume Button */}
                         <a href={Resume} download='Misael_Ponce_Resume'>
-                            <button className='btn btn-outline-dark btn-lg'>
+                            <motion.button 
+                                className='btn btn-outline-dark btn-lg'
+                                whileHover={{ scale: 1.1, backgroundColor: '#ffa500', color: '#212529'}}
+                                whileTap={{ scale: 0.9 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                            >
                                 {t('commonTranslations.common.resume')}
-                                    <span className='first'></span>
-                                    <span className='second'></span>
-                                    <span className='third'></span>
-                                    <span className='fourth'></span>
-                            </button>
+                            </motion.button>
                         </a>
                     </div>
                 </div>
