@@ -1,5 +1,7 @@
 import React from 'react';
 import '../stylesheet/ProjectCard.css';
+import { motion } from 'framer-motion';
+import { DivAnimation } from './Animations/DivAnimation';
 
 const ProjectCard = ({ projectTools, image, projectName, projectDescription, url, modalImage, alt }) => {
 
@@ -7,9 +9,14 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
   const modalId = `modal-${Math.random().toString(36).substring(2, 10)}`;
 
   return (
-    <>
+    <DivAnimation>
     {/* Card Body */}
-        <div className="card h-100">
+        <motion.div 
+            className="card h-100"
+            whileHover={{scale: 1.01, boxShadow:'0px 0px 10px rgba(0, 0, 0, 0.5)'}}
+            whileTap={{ scale: 0.99 }}
+            transition={{ type: "tween"}}
+        >
             <img 
                 src={image} 
                 className="card-img-top main-card"
@@ -17,7 +24,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
                 data-bs-toggle="modal"
                 data-bs-target={`#${modalId}`}
             />
-            <div className="card-body">
+            <div className="card-body user-select-none">
                 {/* Project tittle */}
                 <div className="project-tittle d-flex align-items-center">
                     <h5 className="card-title"><strong>{projectName}</strong></h5>
@@ -28,7 +35,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
                         target='_blank' 
                         rel='noopener noreferrer'
                     >
-                            <i className='bi bi-github bi-lg'></i>
+                        <i className='bi bi-github bi-lg'></i>
                     </a>
                 </div>
                 {/* Project Tech */}
@@ -42,7 +49,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
                 {/* Project Description */}
                 <p className="card-text">{projectDescription}</p>
             </div>
-        </div>
+        </motion.div>
 
     {/* Modal */}
         <div className="modal fade" id={modalId} data-bs-keyboard="false" tabIndex="-1" aria-hidden="true">
@@ -50,7 +57,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
             <div className="modal-dialog modal-lg">
                 <div className="modal-content">
                 <div className="modal-body">
-                    <div className="card h-100">
+                    <div className="card">
                         <img 
                             src={modalImage} 
                             className="card-img-top" 
@@ -88,7 +95,7 @@ const ProjectCard = ({ projectTools, image, projectName, projectDescription, url
                 </div>
             </div>
         </div>
-    </>
+    </DivAnimation>
   );
 };
 

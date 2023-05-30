@@ -33,6 +33,7 @@ export const Navbar = () => {
         }, []);
 
         return (
+            // Return a link with an 'active' class with paremeter defined above
             <a className={`nav-link ms-lg-5 ms-md-5 ms-0 ${isActive ? 'active' : ''}`} aria-current="page" href={`#${sectionId}`}>
                 {children}
             </a>
