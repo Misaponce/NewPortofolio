@@ -59,6 +59,10 @@ i18next
                                 pjName: "China & Bites",
                                 pjInfo: "China & Bites is a chinese food restaurant located in El Salvador who's owner contact me to develope a concept landing page that covers some of the most important details of his bussiness."
                             },
+                            pj3: {
+                                pjName: "Tip Calculator",
+                                pjInfo: "The tip calculator was made as a solution to a challenge from Frontend Mentor. Users are able to alculate the correct tip and total cost of the bill per person."
+                            },
                         }
                     },
                     // Contact Translations
@@ -111,6 +115,10 @@ i18next
                             pj2: {
                                 pjName: "China & Bites",
                                 pjInfo: "China & Bites es un restaurante de comida china ubicado en El Salvador cuyo dueño me contactó para desarrollar una landing page conceptual que cubra algunos de los detalles más importantes de su negocio."
+                            },
+                            pj3: {
+                                pjName: "Calculadora de Propina",
+                                pjInfo: "Tip Calculator por su traducción al inglés, es una solución a un desafío del sitio web Frontend Mentor. Los usuarios pueden calcular la propina correcta y el costo total de la factura por persona."
                             },
                         }
                     },

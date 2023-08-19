@@ -4,6 +4,7 @@ import ProjectCard from './ProjectCard'
 import { useTranslation  } from 'react-i18next'
 import Tech from '../assets/img/tech-1.png'
 import China from '../assets/img/China-1.png'
+import TipCalc from '../assets/img/Tip-Calculator.png';
 
 export const Projects = () => {
   const { t } = useTranslation();
@@ -42,6 +43,18 @@ export const Projects = () => {
                   projectDescription={t('projectsTranslations.projectsList.pj2.pjInfo')}
                   projectTools={['JavaScript', 'Bootstrap 5', 'Sass', ]}
                   alt={'China-Bites'}
+                />
+              </div>
+              {/* Card 3 */}
+              <div className="col">
+                <ProjectCard 
+                  image={TipCalc}
+                  modalImage={TipCalc}
+                  projectName={t('projectsTranslations.projectsList.pj3.pjName')}
+                  url={'https://github.com/Misaponce/tip-calculator'}
+                  projectDescription={t('projectsTranslations.projectsList.pj3.pjInfo')}
+                  projectTools={['TypeScript', 'Tailwind', 'NextJS', ]}
+                  alt={'Tip-Calculator'}
                 />
               </div>
             </div>
