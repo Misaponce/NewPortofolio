@@ -52,16 +52,12 @@ i18next
                         projectsHeader: "Projects",
                         projectsList: {
                             pj1: {
-                                pjName: "TechPlayground",
-                                pjInfo: "This project was developed with the porpouse of put in practice concept and knowledge adquire in the Web Developer Bootcamp by Kodigo (https://kodigo.org/) in which we were able to learn, work and level up our skills in HTML, CSS & JavaScript along with libraries such as ReacJS and CSS frameworks like Bootstrap."
+                                pjName: "Tip Calculator",
+                                pjInfo: "The tip calculator was made as a solution to a challenge from Frontend Mentor. Users are able to alculate the correct tip and total cost of the bill per person."
                             },
                             pj2: {
                                 pjName: "China & Bites",
                                 pjInfo: "China & Bites is a chinese food restaurant located in El Salvador who's owner contact me to develope a concept landing page that covers some of the most important details of his bussiness."
-                            },
-                            pj3: {
-                                pjName: "Tip Calculator",
-                                pjInfo: "The tip calculator was made as a solution to a challenge from Frontend Mentor. Users are able to alculate the correct tip and total cost of the bill per person."
                             },
                         }
                     },
@@ -109,16 +105,12 @@ i18next
                         projectsHeader: "Proyectos",
                         projectsList: {
                             pj1: {
-                                pjName: "TechPlayground",
-                                pjInfo: "Este proyecto fue desarrollado con el propósito de poner en práctica los conocimientos adquiridos en el Web Developer Bootcamp by Kodigo (https://kodigo.org/) en el cual pudimos aprender, desarrollar y nivelar nuestras habilidades en HTML, CSS & JavaScript junto con bibliotecas como ReacJS y frameworks CSS como Bootstrap."
+                                pjName: "Calculadora de Propina",
+                                pjInfo: "Tip Calculator por su traducción al inglés, es una solución a un desafío del sitio web Frontend Mentor. Los usuarios pueden calcular la propina correcta y el costo total de la factura por persona."
                             },
                             pj2: {
                                 pjName: "China & Bites",
                                 pjInfo: "China & Bites es un restaurante de comida china ubicado en El Salvador cuyo dueño me contactó para desarrollar una landing page conceptual que cubra algunos de los detalles más importantes de su negocio."
-                            },
-                            pj3: {
-                                pjName: "Calculadora de Propina",
-                                pjInfo: "Tip Calculator por su traducción al inglés, es una solución a un desafío del sitio web Frontend Mentor. Los usuarios pueden calcular la propina correcta y el costo total de la factura por persona."
                             },
                         }
                     },

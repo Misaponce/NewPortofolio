@@ -23,14 +23,14 @@ export const Projects = () => {
             {/* each cardd goes on a different col */}
               {/* Card 1 */}
               <div className="col">
-                <ProjectCard 
-                  image={Tech}
-                  modalImage={Tech}
+              <ProjectCard 
+                  image={TipCalc}
+                  modalImage={TipCalc}
                   projectName={t('projectsTranslations.projectsList.pj1.pjName')}
-                  url={'link'}
+                  url={'https://github.com/Misaponce/tip-calculator'}
                   projectDescription={t('projectsTranslations.projectsList.pj1.pjInfo')}
-                  projectTools={['React', 'Bootstrap 5', 'Kodigo API', ]}
-                  alt={'TechPlayground'}
+                  projectTools={['TypeScript', 'Tailwind', 'NextJS', ]}
+                  alt={'Tip-Calculator'}
                 />
               </div>
               {/* Card 2 */}
@@ -43,18 +43,6 @@ export const Projects = () => {
                   projectDescription={t('projectsTranslations.projectsList.pj2.pjInfo')}
                   projectTools={['JavaScript', 'Bootstrap 5', 'Sass', ]}
                   alt={'China-Bites'}
-                />
-              </div>
-              {/* Card 3 */}
-              <div className="col">
-                <ProjectCard 
-                  image={TipCalc}
-                  modalImage={TipCalc}
-                  projectName={t('projectsTranslations.projectsList.pj3.pjName')}
-                  url={'https://github.com/Misaponce/tip-calculator'}
-                  projectDescription={t('projectsTranslations.projectsList.pj3.pjInfo')}
-                  projectTools={['TypeScript', 'Tailwind', 'NextJS', ]}
-                  alt={'Tip-Calculator'}
                 />
               </div>
             </div>
