@@ -2,7 +2,7 @@ import React from 'react';
 import '../stylesheet/Home.css';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import Resume from '../assets/Misael_Ponce_Resume.pdf'
+import Resume from '../assets/Misael-Membreno-resume.pdf';
 import { DivAnimation } from './Animations/DivAnimation';
 
 export const Home = () => {
@@ -20,7 +20,7 @@ export const Home = () => {
                         </div>
                         <div className="col-lg-12 col-md-12 p-1 text-center">
                             {/* Resume Button */}
-                            <a href={Resume} download='Misael_Ponce_Resume'>
+                            <a href={Resume} download='Misael-Membreno-resume'>
                                 <motion.button 
                                     className='btn btn-outline-dark btn-lg'
                                     whileHover={{ scale: 1.1, backgroundColor: '#ffa500', color: '#212529'}}
